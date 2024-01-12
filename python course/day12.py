@@ -35,8 +35,8 @@ def easy_level(number):
           print(f"You got it! The answer was {number}")
           break
     if attempts==0:
-        print('You ran out of guesses. You lose!')
-        print(f"The correct answer was {number}")
+        print(f'You ran out of guesses. The correct answer was {number}')
+
 
 def hard_level(number):
     global attempt
@@ -54,8 +54,7 @@ def hard_level(number):
           print(f"You got it! The answer was {number}")
           break
     if attempts==0:
-        print('You ran out of guesses. You lose!')
-        print(f"The correct answer was {number}")
+        print(f'You ran out of guesses. The correct answer was {number}')
 while True:
   number=random.randint(1,100)
   difficulty_level()
