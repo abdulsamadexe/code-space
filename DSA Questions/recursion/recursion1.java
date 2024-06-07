@@ -75,9 +75,18 @@ public class recursion1{
         return isSorted(arr,i+1);
         
     }
+
+    //find x to the power n
+    public static int power(int x,int n){
+        if(n==0){
+            return 1;
+        }
+
+        return x*power(x,n-1);
+    }
     public static void main(String args[]){
-        int[] arr={3,4,5,6,9,7};
-        System.out.print(isSorted(arr,0));
+        System.out.println("Find x to the power n");
+        System.out.println(power(2,5));
 
     }
 }
