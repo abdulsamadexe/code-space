@@ -84,9 +84,23 @@ public class recursion1{
 
         return x*power(x,n-1);
     }
+
+
+    //optimzed x to the power n
+    public static int Power(int n,int pow){
+        if(pow==0){
+            return 1;
+        }
+        int x=Power(n,pow/2);
+        if(pow%2==0){
+            return x*x;
+        }
+        return n*x*x;
+    }
+
     public static void main(String args[]){
         System.out.println("Find x to the power n");
-        System.out.println(power(2,5));
+        System.out.println(Power(2,5));
 
     }
 }
