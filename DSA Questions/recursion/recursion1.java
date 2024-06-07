@@ -5,10 +5,11 @@ public class recursion1{
 
     // print fibonaci series
     public static int fib(int n){
-        if(n==0){
+        if(n==1){
+            
             return 0;
         }
-        if(n==1){
+        if(n==2){
             return 1;
         }
         
@@ -99,8 +100,7 @@ public class recursion1{
     }
 
     public static void main(String args[]){
-        System.out.println("Find x to the power n");
-        System.out.println(Power(2,5));
+        fib(300);
 
     }
 }
