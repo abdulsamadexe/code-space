@@ -2,22 +2,14 @@ package recursion;
 
 public class recursion1{
 
-
-    // print fibonaci series
-    public static int fib(int n){
-        if(n==1){
-            
-            return 0;
+        // print Fibonacci series using recursion
+        public static void printFibonacci(int n, int a, int b){
+            if(n > 0){
+                System.out.print(a + " ");
+                printFibonacci(n - 1, b, a + b);
+            }
         }
-        if(n==2){
-            return 1;
-        }
-        
-        int next=fib(n-2)+fib(n-1);
-        System.out.print(next+" ");
-        return next;
-
-    }
+    
 
 
     // print sum of natural numbers
@@ -100,7 +92,7 @@ public class recursion1{
     }
 
     public static void main(String args[]){
-        fib(300);
+        printFibonacci(10,0,1);
 
     }
 }
